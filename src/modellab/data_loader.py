@@ -41,7 +41,7 @@ def split_features_target(df, target_column):
         print("All features are numeric.")
     else:
         raise ValueError(
-            f"Non-numeric values found in columns: {list(non_num.columns)}"
+            f"Non-numeric values found in a column(s): {list(non_num.columns)}"
         )
 
     duplicates = df.duplicated().sum()

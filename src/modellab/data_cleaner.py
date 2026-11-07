@@ -17,4 +17,4 @@ def impute_features(X_train, X_test):
     X_train = imputer.fit_transform(X_train)
     X_test = imputer.transform(X_test)
     
-    return X_train, X_test, imputer
+    return X_train, X_test, imputer 
